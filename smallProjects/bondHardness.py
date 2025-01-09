@@ -107,7 +107,7 @@ def bondHardness(bondsvar, metallicpop, bondvolm, typesbond):
     return roundedbondhard
 
 
-def totolhardness(bondhardness, typesbond, bondsvar):
+def totalhardness(bondhardness, typesbond, bondsvar):
     """Calculates the total bond hardness of the material
 
     Args:
@@ -171,7 +171,7 @@ def main():
     pmubar = metPop(nfreeValue, volm)
     volmofbonds = bondVolm(volm, typesBond, bondsVar)
     hardnessofbonds = bondHardness(bondsVar, pmubar, volmofbonds, typesBond)
-    totalbondhardness = totolhardness(hardnessofbonds, typesBond, bondsVar)
+    totalbondhardness = totalhardness(hardnessofbonds, typesBond, bondsVar)
 
     print("The no. of Free Electrons is", nfreeValue)
     print("The Metallic Population is", pmubar)
