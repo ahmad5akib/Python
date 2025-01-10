@@ -85,7 +85,7 @@ def bondHardness(bondsvar, metallicpop, bondvolm, typesbond):
     in the material
 
     Args:
-        bondsvar (array): bond variables such as bondlength, no. of bonds, mullikan population of different types of bond
+        bondsvar (array): bond variables such as bond length, no. of bonds, mullikan population of different types of bond
         is stored in an array of m * n matrix form where m is the no. of rows corresponding to bond types and each row having n
         no. of columns corresponding to the bond variables of each type of bond
 
@@ -115,7 +115,7 @@ def totalhardness(bondhardness, typesbond, bondsvar):
 
         typesbond (int): types of bond present in the material
 
-        bondsvar (array): bond variables such as bondlength, no. of bonds, mullikan population of different types of bond
+        bondsvar (array): bond variables such as bond length, no. of bonds, mullikan population of different types of bond
         is stored in an array of m * n matrix form where m is the no. of rows corresponding to bond types and each row having n
         no. of columns corresponding to the bond variables of each type of bond
 
@@ -160,8 +160,8 @@ def main():
 
     bondsVar = np.empty([typesBond, 3])
     for i in range(typesBond):
-        du = float(input("Enter the Bondlength of Type-" + str(i + 1) + " Bond: "))
-        nu = float(input("Enter the Total no. bonds of Type-" + str(i + 1) + ": "))
+        du = float(input("Enter the Bond Length of Type-" + str(i + 1) + " Bond: "))
+        nu = float(input("Enter the Total no. Bonds of Type-" + str(i + 1) + ": "))
         pu = float(
             input("Enter the Mullikan Population of Type-" + str(i + 1) + " Bonds: ")
         )
