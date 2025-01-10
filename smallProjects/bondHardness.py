@@ -25,7 +25,7 @@ def nfree(oddSum, evenSum, firstValue, lastValue, energyInterval):
     return round(nfree, 4)
 
 
-# Function to calculate the metalic population of the material
+# Function to calculate the metallic population of the material
 def metPop(nfree, volm):
     """Calculates the metallic population of the material
 
@@ -42,14 +42,14 @@ def metPop(nfree, volm):
 
 # Function to calculate the bond volume
 def bondVolm(volm, typesBond, bondsVar):
-    """Calcultes the fractional bond volume of the different types of bond
+    """Calculates the fractional bond volume of the different types of bond
 
     Args:
         volm (float): optimized volume of the cell
 
         typesBond (int): types of bond present in the material
 
-        bondsVar (array): bond variables such as bondlength, no. of bonds, mullikan population of different types of bond
+        bondsVar (array): bond variables such as bond-length, no. of bonds, mullikan population of different types of bond
         is stored in an array of m * n matrix form where m is the no. of rows corresponding to bond types and each row having n
         no. of columns corresponding to the bond variables of each type of bond
 
@@ -138,7 +138,7 @@ def main():
     """The main function takes all the inputs and store them in suitable formats.These are then used to calculate the required
     values for the final result of the total bon hardness.
     The inputs are given as arguments to various functions defined above to calculate the necessary values which are stored and printed
-    as the ouptut for the user.
+    as the output for the user.
     """
     firstValue = float(
         input("Enter the Value of Energy for the First Density of State: ")
