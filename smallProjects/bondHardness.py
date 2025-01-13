@@ -140,18 +140,10 @@ def main():
     The inputs are given as arguments to various functions defined above to calculate the necessary values which are stored and printed
     as the output for the user.
     """
-    firstValue = float(
-        input("Enter the Value of Energy for the First Density of State: ")
-    )
-    lastValue = float(
-        input("Enter the Value of Energy for the Last Density of State: ")
-    )
-    evenSum = float(
-        input("Enter the Summation of Energy of Even Numbered Density of States: ")
-    )
-    oddSum = float(
-        input("Enter the Summation of Energy of Odd numbered Density of States: ")
-    )
+    firstValue = float(input("Enter the Value of the First Density of State: "))
+    lastValue = float(input("Enter the Value of the Last Density of State: "))
+    evenSum = float(input("Enter the Summation of Even Numbered Density of States: "))
+    oddSum = float(input("Enter the Summation of Odd numbered Density of States: "))
     energyInterval = float(input("Enter the energy interval: "))
 
     volm = float(input("Enter the Optimized Volume of the Cell: "))
@@ -177,7 +169,7 @@ def main():
     print("The Metallic Population is", pmubar)
     print("The volume of bonds are: ", volmofbonds)
     print("The Hardness of Bonds are (in GPa): ", hardnessofbonds)
-    print("Total Bond Hardness of the Compound is: ", totalbondhardness)
+    print("Total Bond Hardness of the Compound is: ", totalbondhardness, "GPa.")
 
 
 main()
