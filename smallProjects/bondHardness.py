@@ -164,7 +164,7 @@ def main():
     volmofbonds = bondVolm(volm, typesBond, bondsVar)
     hardnessofbonds = bondHardness(bondsVar, pmubar, volmofbonds, typesBond)
     totalbondhardness = totalhardness(hardnessofbonds, typesBond, bondsVar)
-
+    print("\n")
     print("The no. of Free Electrons is", nfreeValue)
     print("The Metallic Population is", pmubar)
     print("The volume of bonds are: ", volmofbonds)
