@@ -10,7 +10,7 @@ df = pd.read_csv("medical_examination.csv")
 # Add 'overweight' column
 df["overweight"] = (df["weight"] / (df["height"] / 100) ** 2 > 25).astype(int)
 
-# Normalize data by making 0 always good and 1 always bad. If the value of 'cholestorol' or 'gluc' is 1,
+# Normalize data by making 0 always good and 1 always bad. If the value of 'cholesterol' or 'gluc' is 1,
 # make the value 0. If the value is more than 1, make the value 1.
 df["cholesterol"] = (df["cholesterol"] > 1).astype(int)
 df["gluc"] = (df["gluc"] > 1).astype(int)
@@ -27,7 +27,7 @@ def draw_cat_plot():
     )
 
     # Group and reformat the data to split it by 'cardio'. Show the counts of each feature. You will have to rename
-    # one of the collumns for the catplot to work correctly.
+    # one of the columns for the catplot to work correctly.
     df_cat = df_cat.groupby(["cardio", "variable", "value"]).size().reset_index()
     df_cat = df_cat.rename(columns={0: "total"})
 
